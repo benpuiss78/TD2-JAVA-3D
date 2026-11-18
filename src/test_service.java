@@ -13,14 +13,6 @@ public class test_service {
             t.start();
         }
 
-        for (Thread t : threads) {
-            try {
-                t.join();
-            } catch (Exception e) {
-                return;
-            }
-        }
-
         System.out.println("Tous les services ont terminé.");
     }
 }
